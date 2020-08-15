@@ -26,6 +26,8 @@ def store_lastseen(lastseen, file_name):
 def retweet_people():
     lastseen = retrieve_lastseen(FILE_NAME)
     mentions = api.retweet(lastseen, tweet_mode = "extended")
+
+
 def testing_git():
     lastseen = retrieve_lastseen(FILE_NAME)
 #adding comments just for fun
