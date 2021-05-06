@@ -23,6 +23,7 @@ def store_lastseen(lastseen, file_name):
     f_write.write(str(lastseen))
     f_write.close()
     return
+
 def retweet_people():
     lastseen = retrieve_lastseen(FILE_NAME)
     mentions = api.retweet(lastseen, tweet_mode = "extended")
